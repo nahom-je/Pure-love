@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int       @id @default(autoincrement())
+  telegramId String    @unique
+  language   String    @default("am")
+  createdAt  DateTime  @default(now())
+  requests   Request[]
+}
+
+model Request {
+  id          Int      @id @default(autoincrement())
+  refCode     String   @unique
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+  firstName   String
+  phone       String
+  gender      String
+  adminId     String?
+  status      String   @default("pending")
+  adminMsgIds String   @default("[]")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

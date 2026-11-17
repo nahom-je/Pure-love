@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "offer": "What We Offer",
+    "howItWorks": "How It Works",
+    "privacy": "Privacy",
+    "donate": "Donate",
+    "getInvolved": "Get Involved",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "PURE LOVE",
+    "subtitle": "Christian Students Charity Group at Jimma Institute of Technology",
+    "description": "We help students who need a hand. We provide clothing, shoes, hygiene products, and study supplies to students in need.",
+    "cta": "Open the Telegram Bot",
+    "badge": "JIT • Jimma Institute of Technology"
+  },
+  "offer": {
+    "title": "What We Offer",
+    "subtitle": "We provide tangible items — not direct financial aid.",
+    "items": {
+      "clothing": { "title": "Clothing", "desc": "Clean, good-condition clothes" },
+      "shoes": { "title": "Shoes", "desc": "Suitable shoes for school" },
+      "hygiene": { "title": "Hygiene Products", "desc": "Soap, shampoo, and more" },
+      "sanitary": { "title": "Feminine Sanitary Items", "desc": "Sanitary products for female students" },
+      "study": { "title": "Study Supplies", "desc": "Notebooks, pens, and other materials" }
+    },
+    "noFinancial": "⚠️ We do NOT provide direct financial aid"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "steps": [
+      { "num": "1", "title": "Message the Bot", "desc": "Open the Telegram bot, choose your language, and submit your request." },
+      { "num": "2", "title": "We Contact You", "desc": "The PURE LOVE team will reach out to you privately." },
+      { "num": "3", "title": "You Receive Help", "desc": "Once arrangements are made, you receive your support." }
+    ]
+  },
+  "privacy": {
+    "title": "Our Privacy Promise",
+    "points": [
+      "Female students are served by a female admin and male students by a male admin.",
+      "Your name and phone number are never shared publicly.",
+      "There are no public lists of recipients.",
+      "Your data is deleted after 90 days."
+    ]
+  },
+  "donate": {
+    "title": "Support Us",
+    "subtitle": "Your donation funds items for students — money is never given directly to students.",
+    "howUsed": "How are donations used?",
+    "howUsedText": "All donations go toward purchasing clothing, shoes, sanitary products, and study supplies for students in need.",
+    "copyButton": "Copy",
+    "copied": "Copied!",
+    "accountHolder": "Account Holder",
+    "accountNumber": "Account Number",
+    "itemDonation": "Donate Items",
+    "itemDonationText": "If you would like to donate physical items, contact us on Telegram.",
+    "contactTelegram": "Contact on Telegram"
+  },
+  "getInvolved": {
+    "title": "Get Involved",
+    "volunteer": { "title": "Volunteer", "desc": "Join our team by contacting us on Telegram." },
+    "donate": { "title": "Donate Items", "desc": "Contact us to donate clothing, shoes, or other supplies." },
+    "dropoff": { "title": "Drop-off Location", "desc": "Jimma Institute of Technology Campus. Contact us on Telegram for exact details." }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "Who can request support?", "a": "Any student at Jimma Institute of Technology can request support." },
+      { "q": "What is not provided?", "a": "We do not provide direct financial aid. Only tangible items are given." },
+      { "q": "How long does it take?", "a": "The team will contact you as soon as possible. Timing may vary." },
+      { "q": "Is my request private?", "a": "Yes. Your request is seen only by the PURE LOVE admin and is never shared publicly." }
+    ]
+  },
+  "footer": {
+    "rights": "© 2025 PURE LOVE. All rights reserved.",
+    "group": "PURE LOVE — JIT Christian Students Charity Group"
+  },
+  "common": {
+    "openBot": "Open the Telegram Bot",
+    "language": "ቋንቋ",
+    "contactTelegram": "Contact on Telegram"
+  }
+}

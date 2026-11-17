@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Environment variables — NEVER commit these
+.env
+bot/.env
+frontend/.env
+
+# Build output
+frontend/dist/
+bot/dist/
+
+# Database files
+bot/prisma/dev.db
+bot/prisma/*.db
+bot/prisma/*.db-journal
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Temp export files
+*.csv
+

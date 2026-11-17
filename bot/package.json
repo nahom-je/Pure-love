@@ -1,0 +1,24 @@
+{
+  "name": "pure-love-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "grammy": "^1.21.1",
+    "@grammyjs/conversations": "^1.2.0",
+    "@grammyjs/runner": "^2.0.3",
+    "express": "^4.18.2",
+    "@prisma/client": "^5.10.0",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "prisma": "^5.10.0"
+  }
+}
