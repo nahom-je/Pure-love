@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { Bot, session } from "grammy";
+import { Bot, session, webhookCallback } from "grammy";
 import { conversations, createConversation } from "@grammyjs/conversations";
 import express from "express";
 import { getPrisma, disconnectDb } from "./services/db.js";
@@ -92,13 +92,18 @@ if (isProduction) {
   app.get("/health", (req, res) => res.json({ status: "ok", timestamp: new Date().toISOString() }));
 
   const webhookPath = `/webhook/${process.env.BOT_TOKEN}`;
-  app.use(bot.webhookCallback(webhookPath));
+  app.use(webhookPath, webhookCallback(bot, "express"));
 
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, async () => {
     console.log(`[Bot] Webhook server listening on port ${PORT}`);
-    await bot.api.setWebhook(`${process.env.WEBHOOK_URL}${webhookPath}`);
-    console.log("[Bot] Webhook set.");
+    const baseUrl = (process.env.WEBHOOK_URL || "").replace(/\/+$/, "");
+    if (baseUrl) {
+      await bot.api.setWebhook(`${baseUrl}${webhookPath}`);
+      console.log(`[Bot] Webhook set to ${baseUrl}${webhookPath}`);
+    } else {
+      console.warn("[Bot] Warning: WEBHOOK_URL not set.");
+    }
   });
 } else {
   // Long polling for development
