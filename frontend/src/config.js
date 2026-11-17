@@ -13,6 +13,7 @@ export const DONATION_METHODS = [
 
 export const TELEGRAM_BOT_LINK = "https://t.me/Purehearts_bot";
 
-// Direct contact links for donating items or volunteering
+// Direct contact links for coordinators
 export const DONATE_ITEMS_CONTACT_LINK = "https://t.me/sam_denke";
 export const VOLUNTEER_CONTACT_LINK = "https://t.me/sam_denke";
+export const FEMALE_COORDINATOR_LINK = "https://t.me/Meliyekal";

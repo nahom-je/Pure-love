@@ -33,9 +33,13 @@ export function registerStudentHandlers(bot) {
 
   // /volunteer & /donate — direct contact for item donations or volunteering
   bot.command(["volunteer", "donate"], async (ctx) => {
-    const keyboard = new InlineKeyboard().url("📩 Contact Coordinator (@sam_denke)", "https://t.me/sam_denke");
+    const keyboard = new InlineKeyboard()
+      .url("👨‍💼 Male Coordinator (@sam_denke)", "https://t.me/sam_denke")
+      .row()
+      .url("👩‍💼 Female Coordinator (@Meliyekal)", "https://t.me/Meliyekal");
+
     await ctx.reply(
-      "🤝 To donate physical items or volunteer with PURE LOVE, please contact our coordinator:\n\nቁሳቁስ ለመለገስ ወይም በበጎ ፈቃደኝነት ለመሳተፍ እባክዎ አስተባባሪውን ያነጋግሩ: @sam_denke",
+      "🤝 To donate physical items or volunteer with PURE LOVE, please contact our coordinators:\n\nቁሳቁስ ለመለገስ ወይም በበጎ ፈቃደኝነት ለመሳተፍ እባክዎ አስተባባሪዎችን ያነጋግሩ:\n• ወንድ: @sam_denke\n• ሴት: @Meliyekal",
       { reply_markup: keyboard }
     );
   });
